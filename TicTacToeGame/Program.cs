@@ -26,8 +26,7 @@ namespace TicTacToeGame
         {
            
             Console.WriteLine("Welcome To Tic Tac Toe Game");
-            Console.WriteLine("Player 1 : X");
-            Console.WriteLine("Player 2 : O "); 
+           
             
         }
     }
