@@ -4,30 +4,19 @@ namespace TicTacToeGame
 {
     class Program
     {
-        public static void GameDisplay()
+        static void BoardDisplay()
         {
-            Console.WriteLine("Select choice \n X \n O ");
-            string choice = Console.ReadLine();
-            switch(choice)
+            int boardSize = 10;
+            char[] board = new char[boardSize];
+            for(int i = 1; i < boardSize; i++)
             {
-                case "X":
-                    Console.WriteLine("You choice X");
-                    break;
-                case "O":
-                    Console.WriteLine("You choice O");
-                    break;
-                default:
-                    Console.WriteLine("Invalid Choice");
-                    break;
+                board[i] = ' ';
             }
-
         }
         static void Main(string[] args)
         {
-           
             Console.WriteLine("Welcome To Tic Tac Toe Game");
-           
-            
+            BoardDisplay();
         }
     }
         
